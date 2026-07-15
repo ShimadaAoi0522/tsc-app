@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Utsukushi';
+    src: url('../assets/fonts/UtsukushiFONT.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+
+    font-family: 'Utsukushi', sans-serif;
+    font-size: 22px;
+    z-index: 2;
+}
+
+.title-subtitle {
+    display: flex;
+    gap: 16px;
+    margin-top: -20px;
+
+    font-family: inherit;
+    font-size: 10px;
+    color: #2f2d2d;
+}
+
+.title-black {
+    color: #2f2d2d;
+}
+
+.title-red {
+    color: #ad2d3c;
+}
+.title-page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #fdf8f5;
+}
+
+
+.hinomaru,
+.sakura1mai,
+.sakura2mai
+    {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+}
+
+.hinomaru {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    width: clamp(100px, 20vw, 180px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.sakura2mai {
+    position: absolute;
+    top: 22%;
+    left: 60%;
+    width: clamp(100px, 20vw, 180px);
+    transform: translate(-50%, -50%);
+}
+.sakura2mai2 {
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    width: clamp(80px, 16vw, 140px);
+    transform: translate(-50%, -50%) rotate(20deg) scale(1.3);
+}
+.sakura2mai3 {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    width: clamp(60px, 12vw, 120px);
+    transform: translate(-50%, -50%) rotate(-30deg) scale(2.0);
+}
+.sakura1mai {
+    position: absolute;
+    top: 22%;
+    left: 60%;
+    width: clamp(100px, 20vw, 180px);
+    transform: translate(-50%, -50%);
+    transform: scale(0.2);
+}
+
+.sakura1mai2 {
+    position: absolute;
+    top: 43%;
+    left: 28%;
+    width: clamp(100px, 20vw, 180px);
+    transform: translate(-50%, -50%);
+    transform: rotate(-30deg) scale(0.2);
+
+}
+.center-line {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    background-color: #d9b7b0;
+    transform: translateX(-50%);
+}
+
+.top {
+    top:3%;
+    height: 16vh;
+}
+
+.bottom {
+    top: 35%;
+    height: 40vh;
+}
