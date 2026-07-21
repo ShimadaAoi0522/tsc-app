@@ -1,13 +1,33 @@
 import "./TitlePage.css"
+import type { KeyboardEvent } from "react"
+import { useNavigate } from "react-router-dom"
 
-import hinomaru from "../assets/images/hinomaru.png"
-import sakura1mai from "../assets/images/sakura1mai.png"
-import sakura2mai from "../assets/images/sakura2mai.png"
+import hinomaru from "../../assets/images/hinomaru.png"
+import sakura1mai from "../../assets/images/sakura1mai.png"
+import sakura2mai from "../../assets/images/sakura2mai.png"
 
 
 function TitlePage() {
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        navigate("/main")
+    }
+
+    const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+        if (event.key === "Enter" || event.key === " ") {
+            navigate("/main")
+        }
+    }
+
     return (
-            <div className= "title-page">
+            <div
+                className= "title-page"
+                role="button"
+                tabIndex={0}
+                onClick={handleClick}
+                onKeyDown={handleKeyDown}
+            >
                 <div className="title-container">
                     <h1 className="title-logo">
                         <span className="title-black">T</span>

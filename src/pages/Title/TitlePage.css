@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Utsukushi';
-    src: url('../assets/fonts/UtsukushiFONT.otf') format('opentype');
+    src: url('../../assets/fonts/UtsukushiFONT.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
@@ -39,6 +39,7 @@
     min-height: 100vh;
     overflow: hidden;
     background-color: #fdf8f5;
+    cursor: pointer;
 }
 
 
