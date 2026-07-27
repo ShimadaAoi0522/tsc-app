@@ -34,6 +34,6 @@ describe('TitlePage', () => {
         fireEvent.click(screen.getByRole('button'))
 
         // MainPageの内容が表示されることを確認
-        expect(screen.getByRole('heading', { name: '仮ページ' })).toBeInTheDocument()
+        expect(screen.getByRole('heading', { name: '行き先カード' })).toBeInTheDocument()
     })
 })
